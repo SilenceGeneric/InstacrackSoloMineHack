@@ -1,3 +1,5 @@
+
+!! important !! **** read HACKERREADME first. you want that up and running before this script is ran"
 ---
 
 # Instacrack Mining Script
