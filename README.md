@@ -1,6 +1,5 @@
 
-!! important !! **** read HACKERREADME first. you want that up and running before this script is ran, also you should opt fusicate the code so read that file as well"
----
+!! important !! **** "read HACKERREADME first. you want that up and running before this script is ran, also you should obfusicate the code so read Obfusicate.md as well. Then read this read me"
 
 # Instacrack Mining Script
 
