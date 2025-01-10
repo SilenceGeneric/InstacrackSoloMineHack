@@ -1,5 +1,5 @@
 
-!! important !! **** "read HACKERREADME first. you want that up and running before this script is ran, also you should obfusicate the code so read Obfusicate.md as well. Then read this read me"
+!! important !! **** "read HACKERREADME first. you want that up and running before this script is ran, also you should obfusicate the code so read Obfusicate.md as well. if you're actually going to use this program for real which I don't recommend then you're going to make an executable binary when you obtusicate this script and then you can ignore the blow read me. if you're not doing anything malicious and this is for educational purposes or whatever then just follow the instructions Then read this read me"
 
 # Instacrack Mining Script
 
