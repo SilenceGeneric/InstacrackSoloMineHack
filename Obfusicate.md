@@ -1,4 +1,4 @@
-##obviously you might want to replace some of the file names and terminology in this code before you have fusicated you certainly don't want the name of the file to be anything with miner in it. I tried to make all of these instructions as clear as possible so that anyone even a child could follow these instructions.
+##obviously you might want to replace some of the file names and terminology in this code before you obfusocate. you certainly don't want the name of the file to be anything with miner in it. I tried to make all of these instructions as clear as possible so that anyone even a child could follow these instructions.
 
 To **obfuscate** the shell script using **SHC** (Shell Script Compiler), follow these step-by-step instructions. SHC will convert your shell script into a binary executable, making it difficult to read or reverse engineer.
 
