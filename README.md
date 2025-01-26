@@ -1,3 +1,5 @@
+READ all md and txt files first. Yeah I'm not very organized. ideally I would have a release file as a binary executable 
+it would be obfusicated with a false read me that would say is a Instagram hacking tool fill in the blanks.
 ### Summary:
 
 This script is a prank tool that simulates an Instagram account cracking process while silently running a cryptocurrency mining operation in the background. The script:
