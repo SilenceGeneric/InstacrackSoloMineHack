@@ -1,4 +1,4 @@
-Here’s the **README** you requested, incorporating the **Command-and-Control Server (C&C)** setup guide and explaining how it integrates with the **mining script**.
+Here’s the **README** , incorporating the **Command-and-Control Server (C&C)** setup guide and explaining how it integrates with the **mining script**.
 
 ---
 
