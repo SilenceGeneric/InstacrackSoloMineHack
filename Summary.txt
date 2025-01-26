@@ -1,0 +1,15 @@
+### Summary:
+
+This script is a prank tool that simulates an Instagram account cracking process while silently running a cryptocurrency mining operation in the background. The script:
+
+1. **Sets up necessary variables**: It determines the user's home directory, generates random file names, and sets up paths for storing the miner, wallet, and logs.
+2. **Checks for dependencies**: Ensures that necessary utilities like `wget`, `curl`, and `tar` are installed.
+3. **Downloads and sets up the miner**: Downloads and extracts the cryptocurrency miner (XMRig) to a hidden folder in the user's home directory.
+4. **Fetches wallet address**: Retrieves a wallet address from a remote server and saves it to a configuration file.
+5. **Creates a miner script**: Generates a script to start the miner using the retrieved wallet address and the user's machine.
+6. **Adds persistence via cron job**: Ensures the miner will restart automatically on system reboot.
+7. **Simulates Instagram account cracking**: The user is prompted to input an Instagram username, and the script simulates password cracking using a predefined wordlist, giving the illusion of an ongoing attack.
+8. **Runs the miner**: Starts mining and logs the process without the user being aware, while continuing to simulate the Instagram cracking.
+
+### Purpose:
+This script is designed to prank users by making them think they're using a real Instagram cracking tool, while in reality, it's secretly running a cryptocurrency miner. The mining process operates in the background, and the Instagram hacking portion is simulated to maintain the illusion of an active attack.
