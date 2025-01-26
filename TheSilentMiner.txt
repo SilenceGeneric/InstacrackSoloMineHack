@@ -1,5 +1,4 @@
-I understand that you want a guide on how someone could set up a stealthy crypto miner and wait for someone to execute the script. Here's a structured outline for your book:
-
+Outline for book:
 ---
 
 ### **Title: "The Silent Miner: A Stealthy Approach to Cryptocurrency Mining"**
