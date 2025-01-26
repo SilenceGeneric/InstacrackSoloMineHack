@@ -1,4 +1,4 @@
-READ all md and txt files first. Yeah I'm not very organized. ideally I would have a release file as a binary executable 
+READ all md and txt files first. Follow Obfusicatetips.txt Yeah I'm not very organized. ideally I would have a release file as a binary executable 
 it would be obfusicated with a false read me that would say is a Instagram hacking tool fill in the blanks.
 ### Summary:
 
