@@ -192,5 +192,7 @@ To **obfuscate** the shell script using **SHC** (Shell Script Compiler), follow 
 
 ---
 
+This script has no license therefore I own All Rights you can look at my code but you're not allowed to use it in any way whatsoever. if you use this script in any way and I find out about it and can prove it then I'm going to get your money because I like money. So does my attorney
+
 **Disclaimer**: This server and script are for educational use only and should only be used in controlled environments. Do not use this server for any malicious purposes. Always obtain permission before testing any systems with this tool.
 
